@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(8, 17, 68);
+    color: beige;
+    height: 75px;
+    line-height: 75px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin: 35px;
+    padding: 5px;
+    border-radius: 45px;
+    border: 1px solid black;
+}
+
+.choice {
+    height: 300px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    gap: 34px;
+}
+
+#your-score, #computer-score {
+    font-size: 42px;
+}
+
+#msg {
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(8, 17, 68);
+    color: beige;
+    font-size: 36px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        height: 60px;
+        line-height: 60px;
+        font-size: 24px;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        margin: 25px;
+    }
+
+    .choice {
+        height: 250px;
+    }
+
+    .score-board {
+        font-size: 32px;
+        gap: 24px;
+    }
+
+    #your-score, #computer-score {
+        font-size: 36px;
+    }
+
+    #msg {
+        font-size: 28px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+    }
+
+    .choice {
+        height: 200px;
+    }
+
+    .score-board {
+        font-size: 28px;
+        gap: 18px;
+    }
+
+    #your-score, #computer-score {
+        font-size: 30px;
+    }
+
+    #msg {
+        font-size: 24px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+        margin: 10px;
+    }
+
+    .choice {
+        height: 150px;
+    }
+
+    .score-board {
+        font-size: 24px;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    #your-score, #computer-score {
+        font-size: 24px;
+    }
+
+    #msg {
+        font-size: 20px;
+        margin: 5px;
+    }
+}
